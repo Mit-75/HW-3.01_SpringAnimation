@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -15,18 +15,106 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TfL-Ul-tnx" customClass="SpringView" customModule="SpringAnimation">
+                                <rect key="frame" x="37" y="80" width="301" height="204"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KMX-nQ-fUZ">
+                                        <rect key="frame" x="25.5" y="22" width="250" height="160"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="animation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWi-C5-A4W">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.35120738639999999" green="0.39797312060000001" blue="0.68437264330000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="curve" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLR-k3-zhh">
+                                                <rect key="frame" x="0.0" y="34" width="250" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.35120738639999999" green="0.39797312060000001" blue="0.68437264330000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="force" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FG1-cv-cdK">
+                                                <rect key="frame" x="0.0" y="68" width="250" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.35120738639999999" green="0.39797312060000001" blue="0.68437264330000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="duration" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDm-np-TOI">
+                                                <rect key="frame" x="0.0" y="102" width="250" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.35120738639999999" green="0.39797312060000001" blue="0.68437264330000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="delay" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VY2-Cj-Acc">
+                                                <rect key="frame" x="0.0" y="136" width="250" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.35120738639999999" green="0.39797312060000001" blue="0.68437264330000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="5sk-Kf-nda"/>
+                                            <constraint firstAttribute="height" constant="160" id="aXL-vg-7Yw"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstItem="KMX-nQ-fUZ" firstAttribute="centerX" secondItem="TfL-Ul-tnx" secondAttribute="centerX" id="4V7-ZS-ocC"/>
+                                    <constraint firstAttribute="width" constant="301" id="Pey-VQ-odv"/>
+                                    <constraint firstItem="KMX-nQ-fUZ" firstAttribute="centerY" secondItem="TfL-Ul-tnx" secondAttribute="centerY" id="kgx-jP-fB0"/>
+                                    <constraint firstAttribute="height" constant="204" id="u25-OA-5Ax"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1R-Ht-2ap" customClass="SpringButton" customModule="SpringAnimation">
+                                <rect key="frame" x="37" y="540" width="301" height="53"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="Eif-yh-Rpi"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="SE1-uz-9Za"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Run">
+                                    <color key="titleColor" red="0.35120738639999999" green="0.39797312060000001" blue="0.68437264330000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="runAnimationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nfe-0Y-JX3"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U1R-Ht-2ap" firstAttribute="width" secondItem="TfL-Ul-tnx" secondAttribute="width" id="A4d-AX-aj3"/>
+                            <constraint firstItem="TfL-Ul-tnx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P1F-2F-8bT"/>
+                            <constraint firstItem="U1R-Ht-2ap" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QbP-K9-uPL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="U1R-Ht-2ap" secondAttribute="bottom" multiplier="9:8" id="eUj-XR-pJx"/>
+                            <constraint firstItem="TfL-Ul-tnx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="fLK-2g-EPa"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="animationButton" destination="U1R-Ht-2ap" id="gvY-KY-YIy"/>
+                        <outlet property="animationLabel" destination="HWi-C5-A4W" id="41v-mo-ZRO"/>
+                        <outlet property="animationView" destination="TfL-Ul-tnx" id="iHy-C8-upV"/>
+                        <outlet property="curveLabel" destination="QLR-k3-zhh" id="sZR-jv-f1G"/>
+                        <outlet property="delayLabel" destination="VY2-Cj-Acc" id="Tob-3H-3Vf"/>
+                        <outlet property="durationLabel" destination="HDm-np-TOI" id="TOd-ah-RjA"/>
+                        <outlet property="forceLabel" destination="FG1-cv-cdK" id="vb2-88-n5U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="115" y="4"/>
+            <point key="canvasLocation" x="114.40000000000001" y="3.1484257871064472"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
