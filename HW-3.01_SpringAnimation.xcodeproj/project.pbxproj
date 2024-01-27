@@ -56,15 +56,47 @@
 		33FD51A32B64C9DA007539F8 /* HW-3.01_SpringAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				33FD51A42B64C9DA007539F8 /* AppDelegate.swift */,
-				33FD51A62B64C9DA007539F8 /* SceneDelegate.swift */,
-				33FD51A82B64C9DA007539F8 /* ViewController.swift */,
-				33FD51AA2B64C9DA007539F8 /* Main.storyboard */,
+				33FD51B92B64CA66007539F8 /* ViewControllers */,
+				33FD51B82B64CA16007539F8 /* Storyboards */,
+				33FD51BB2B64CB0E007539F8 /* Extension+UIView */,
+				33FD51BA2B64CA8D007539F8 /* App */,
 				33FD51AD2B64C9DC007539F8 /* Assets.xcassets */,
-				33FD51AF2B64C9DC007539F8 /* LaunchScreen.storyboard */,
 				33FD51B22B64C9DC007539F8 /* Info.plist */,
 			);
 			path = "HW-3.01_SpringAnimation";
+			sourceTree = "<group>";
+		};
+		33FD51B82B64CA16007539F8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				33FD51AA2B64C9DA007539F8 /* Main.storyboard */,
+				33FD51AF2B64C9DC007539F8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		33FD51B92B64CA66007539F8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				33FD51A82B64C9DA007539F8 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		33FD51BA2B64CA8D007539F8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				33FD51A42B64C9DA007539F8 /* AppDelegate.swift */,
+				33FD51A62B64C9DA007539F8 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		33FD51BB2B64CB0E007539F8 /* Extension+UIView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Extension+UIView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,9 +339,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "DmitryParhomenko.HW-3-01-SpringAnimation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -335,9 +371,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "DmitryParhomenko.HW-3-01-SpringAnimation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
